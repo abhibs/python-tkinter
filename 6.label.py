@@ -9,7 +9,11 @@ label = Label(root, text="Abhiram B S")
 
 # updating label using config method
 
-label.config(text="Abhiram B S Javalli Tudoor Thirthahalli Shimoga Karnataka")
+# label.config(text="Abhiram B S Javalli Tudoor Thirthahalli Shimoga Karnataka")
+
+
+# updating font
+label['font'] = "Times 15"
 
 label.pack()
 
