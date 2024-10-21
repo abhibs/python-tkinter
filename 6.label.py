@@ -44,7 +44,11 @@ label.config(wraplength='150')
 
 # label['justify'] = RIGHT
 # label['justify'] = LEFT
-label['justify'] = CENTER
+# label['justify'] = CENTER
+
+# update justify content using config method
+
+label.config(justify=RIGHT)
 
 label.pack()
 
