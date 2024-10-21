@@ -42,7 +42,8 @@ label.config(wraplength='150')
 
 # update justify content -> RIGHT, LEFT and CENTER(defualt)
 
-label['justify'] = RIGHT
+# label['justify'] = RIGHT
+label['justify'] = LEFT
 
 label.pack()
 
