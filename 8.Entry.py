@@ -4,6 +4,13 @@ root = Tk()
 
 root.geometry('500x500')
 
+def getFields():
+    val1 = entry.get()
+    val2 = entry1.get()
+
+    print("Your Name is: "+val1)
+    print("Your Password: " + val2)
+
 entry = Entry(root, width=50)
 
 # placeholder
@@ -17,7 +24,7 @@ entry1 = ttk.Entry(root, width=50)
 entry1.config(show="*")
 
 
-button = ttk.Button(root, text='Login')
+button = ttk.Button(root, text='Login', command=getFields)
 
 entry.pack()
 entry1.pack()
