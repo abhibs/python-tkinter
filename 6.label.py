@@ -39,6 +39,11 @@ label.config(text="Abhiram B S Javalli Tudoor Thirthahalli Shimoga Karnataka")
 
 label.config(wraplength='150')
 
+
+# update justify content -> RIGHT, LEFT and CENTER(defualt)
+
+label['justify'] = RIGHT
+
 label.pack()
 
 root.mainloop()
