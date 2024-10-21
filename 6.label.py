@@ -13,7 +13,10 @@ label = Label(root, text="Abhiram B S")
 
 
 # updating font
-label['font'] = "Times 15"
+# label['font'] = "Times 15"
+
+# updating font using config method
+label.config(font="Times 15")
 
 label.pack()
 
