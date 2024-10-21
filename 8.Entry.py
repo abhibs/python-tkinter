@@ -16,7 +16,11 @@ entry1 = ttk.Entry(root, width=50)
 
 entry1.config(show="*")
 
+
+button = ttk.Button(root, text='Login')
+
 entry.pack()
 entry1.pack()
+button.pack()
 
 root.mainloop()
