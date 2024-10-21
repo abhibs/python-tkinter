@@ -28,7 +28,11 @@ label = Label(root, text="Abhiram B S")
 # label['bg'] = 'blue'
 
 # updating background using config method
-label.config(bg='red')
+# label.config(bg='red')
+
+label.config(text="Abhiram B S Javalli Tudoor Thirthahalli Shimoga Karnataka")
+label['wraplength'] = '150'
+
 
 label.pack()
 
