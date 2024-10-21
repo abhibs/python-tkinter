@@ -15,7 +15,11 @@ entry = Entry(root, width=50)
 
 # placeholder
 
-entry.insert(0, "Please Enter Your Name")
+entry.insert(0, "Abhiram")
+
+# entry with readonly with state
+
+entry.config(state="disabled")
 
 entry1 = ttk.Entry(root, width=50)
 
