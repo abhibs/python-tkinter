@@ -22,7 +22,10 @@ label = Label(root, text="Abhiram B S")
 # label['fg'] = 'blue'
 
 #updating foreground using config method
-label.config(fg='yellow')
+# label.config(fg='yellow')
+
+# updating background
+label['bg'] = 'blue'
 
 label.pack()
 
