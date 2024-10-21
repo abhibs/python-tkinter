@@ -19,7 +19,11 @@ entry.insert(0, "Abhiram")
 
 # entry with readonly with state
 
-entry.config(state="disabled")
+# entry.config(state="disabled")
+
+# entry with readonly with state another method
+
+entry.config(state=DISABLED)
 
 entry1 = ttk.Entry(root, width=50)
 
