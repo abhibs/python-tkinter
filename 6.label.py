@@ -16,7 +16,10 @@ label = Label(root, text="Abhiram B S")
 # label['font'] = "Times 15"
 
 # updating font using config method
-label.config(font="Times 15")
+# label.config(font="Times 15")
+
+# updating foreground
+label['fg'] = 'blue'
 
 label.pack()
 
