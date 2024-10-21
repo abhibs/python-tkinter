@@ -23,7 +23,12 @@ entry.insert(0, "Abhiram")
 
 # entry with readonly with state another method
 
-entry.config(state=DISABLED)
+# entry.config(state=DISABLED)
+
+
+# difference between disabled and readonly disabled text not copy also but readonly we can copy the text
+
+entry.config(state="readonly")
 
 entry1 = ttk.Entry(root, width=50)
 
