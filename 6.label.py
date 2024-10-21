@@ -31,8 +31,13 @@ label = Label(root, text="Abhiram B S")
 # label.config(bg='red')
 
 label.config(text="Abhiram B S Javalli Tudoor Thirthahalli Shimoga Karnataka")
-label['wraplength'] = '150'
 
+# udpate wraplength
+# label['wraplength'] = '150'
+
+# update wraplenght using config method
+
+label.config(wraplength='150')
 
 label.pack()
 
