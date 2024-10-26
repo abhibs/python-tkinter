@@ -26,6 +26,9 @@ lblname.grid(row=1, column=0, sticky=E)
 entry1.grid(row=1, column=1)
 lblpass.grid(row=2, column=0)
 entry2.grid(row=2, column=1)
-button.grid(row=3, column=0)
+
+
+
+button.grid(row=3, column=1,sticky=E)
 
 root.mainloop()
