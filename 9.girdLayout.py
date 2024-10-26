@@ -21,7 +21,7 @@ button = ttk.Button(root, text="Login")
 
 
 lbltitle.grid(row=0, column=0, columnspan=2)
-lblname.grid(row=1, column=0)
+lblname.grid(row=1, column=0, sticky=W)
 entry1.grid(row=1, column=1)
 lblpass.grid(row=2, column=0)
 entry2.grid(row=2, column=1)
