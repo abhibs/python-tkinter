@@ -29,6 +29,7 @@ entry2.grid(row=2, column=1)
 
 
 
-button.grid(row=3, column=1,sticky=E)
+# button.grid(row=3, column=1,sticky=E)
+button.grid(row=3, column=1,sticky=W)
 
 root.mainloop()
