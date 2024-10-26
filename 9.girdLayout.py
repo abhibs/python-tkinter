@@ -31,6 +31,7 @@ entry2.grid(row=2, column=1)
 
 # button.grid(row=3, column=1,sticky=E)
 # button.grid(row=3, column=1,sticky=W)
-button.grid(row=3, column=1,sticky=E+W) # center(E+W)
+# button.grid(row=3, column=1,sticky=E+W) # center(E+W)
+button.grid(row=3, column=1,sticky=E+W, pady=5) # center(E+W) , pady means top and bottom, padx means left and right
 
 root.mainloop()
