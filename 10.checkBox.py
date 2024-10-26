@@ -16,6 +16,11 @@ entry2 = ttk.Entry(root, width=30)
 entry1.insert(0, 'Enter Your Name')
 entry2.insert(0, 'Enter Your Password')
 
+
+cbox = Checkbutton(root, text='Remember Me', font="Arial 15")
+
+
+
 button = ttk.Button(root, text="Login")
 
 
@@ -29,9 +34,12 @@ entry2.grid(row=2, column=1)
 
 
 
+cbox.grid(row=3, column=1)
+
+
 # button.grid(row=3, column=1,sticky=E)
 # button.grid(row=3, column=1,sticky=W)
 # button.grid(row=3, column=1,sticky=E+W) # center(E+W)
-button.grid(row=3, column=1,sticky=E+W, pady=5) # center(E+W) , pady means top and bottom, padx means left and right
+button.grid(row=4, column=1,sticky=E+W, pady=5) # center(E+W) , pady means top and bottom, padx means left and right
 
 root.mainloop()
