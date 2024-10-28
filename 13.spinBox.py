@@ -49,6 +49,8 @@ for i in range(1, 13):
 
 combobox = ttk.Combobox(root, textvariable=months, values=(numbers), state='readonly')
 
+spinbox = Spinbox(root, from_=1997, to=2025)
+
 button = ttk.Button(root, text="Login", command=getValue)
 
 
@@ -65,9 +67,11 @@ entry2.grid(row=2, column=1)
 cbox.grid(row=3, column=1)
 
 combobox.grid(row=5, column=1)
+
+spinbox.grid(row=6, column=1)
 # button.grid(row=3, column=1,sticky=E)
 # button.grid(row=3, column=1,sticky=W)
 # button.grid(row=3, column=1,sticky=E+W) # center(E+W)
-button.grid(row=6, column=1,sticky=E+W, pady=5) # center(E+W) , pady means top and bottom, padx means left and right
+button.grid(row=7, column=1,sticky=E+W, pady=5) # center(E+W) , pady means top and bottom, padx means left and right
 
 root.mainloop()
