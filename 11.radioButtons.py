@@ -32,6 +32,10 @@ chvar.set(0)
 cbox = Checkbutton(root, text='Remember Me', variable=chvar, font="Arial 15")
 
 
+gender = StringVar()
+ttk.Radiobutton(root, text='Male', value="male", variable=gender).grid(row=4, column=0)
+ttk.Radiobutton(root, text='Female', value="female", variable=gender).grid(row=4, column=1)
+
 
 button = ttk.Button(root, text="Login", command=getValue)
 
@@ -52,6 +56,6 @@ cbox.grid(row=3, column=1)
 # button.grid(row=3, column=1,sticky=E)
 # button.grid(row=3, column=1,sticky=W)
 # button.grid(row=3, column=1,sticky=E+W) # center(E+W)
-button.grid(row=4, column=1,sticky=E+W, pady=5) # center(E+W) , pady means top and bottom, padx means left and right
+button.grid(row=5, column=1,sticky=E+W, pady=5) # center(E+W) , pady means top and bottom, padx means left and right
 
 root.mainloop()
