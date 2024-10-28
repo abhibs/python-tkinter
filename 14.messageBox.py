@@ -5,7 +5,16 @@ from tkinter import messagebox
 root = Tk()
 root.geometry("350x250")
 
-button1 = ttk.Button(root, text='Button One')
+
+def deleteMgs():
+    mbox = messagebox.askquestion("delete", "Are You Sure Want To Delete the Item")
+    if mbox == "yes":
+        print("Deleted")
+    else:
+        print("Not Deleted")
+
+
+button1 = ttk.Button(root, text='Button One', command=deleteMgs)
 button2 = ttk.Button(root, text='Button Two')
 
 
