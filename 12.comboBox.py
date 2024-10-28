@@ -15,6 +15,7 @@ def getValue():
         print("Remember Me Not Selected")
 
     print("Your Gender is: "+ gender.get())
+    print("Month is: "+ months.get())
 
 
 lbltitle = ttk.Label(text='Abhiram B S', font=(('Arial'), 22))
