@@ -40,7 +40,7 @@ ttk.Radiobutton(root, text='Female', value="female", variable=gender).grid(row=4
 
 
 months = StringVar()
-combobox = ttk.Combobox(root, textvariable=months, values=('Jan', 'Feb', 'Mar', 'Apr', 'May', 'June', 'July', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'))
+combobox = ttk.Combobox(root, textvariable=months, values=('Jan', 'Feb', 'Mar', 'Apr', 'May', 'June', 'July', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'), state='readonly')
 
 button = ttk.Button(root, text="Login", command=getValue)
 
