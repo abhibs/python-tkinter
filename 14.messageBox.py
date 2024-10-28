@@ -14,8 +14,13 @@ def deleteMgs():
         print("Not Deleted")
 
 
+def infoMgs():
+    messagebox.showinfo("success", "Well Done")
+
+
+
 button1 = ttk.Button(root, text='Button One', command=deleteMgs)
-button2 = ttk.Button(root, text='Button Two')
+button2 = ttk.Button(root, text='Button Two', command=infoMgs)
 
 
 
