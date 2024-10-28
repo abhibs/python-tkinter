@@ -5,6 +5,15 @@ root = Tk()
 
 root.geometry("500x450")
 
+def getValue():
+    print("Your Name: "+ entry1.get())
+    print("Your Password: "+ entry2.get())
+
+    if chvar.get() == 1:
+        print("Remember Me Selected")
+    else:
+        print("Remember Me Not Selected")
+
 
 lbltitle = ttk.Label(text='Abhiram B S', font=(('Arial'), 22))
 lblname = ttk.Label(text='Your Name: ')
@@ -24,7 +33,7 @@ cbox = Checkbutton(root, text='Remember Me', variable=chvar, font="Arial 15")
 
 
 
-button = ttk.Button(root, text="Login")
+button = ttk.Button(root, text="Login", command=getValue)
 
 
 
