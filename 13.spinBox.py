@@ -16,6 +16,7 @@ def getValue():
 
     print("Your Gender is: "+ gender.get())
     print("Month is: "+ months.get())
+    print("Year is: "+ year.get())
 
 
 lbltitle = ttk.Label(text='Abhiram B S', font=(('Arial'), 22))
@@ -49,7 +50,9 @@ for i in range(1, 13):
 
 combobox = ttk.Combobox(root, textvariable=months, values=(numbers), state='readonly')
 
-spinbox = Spinbox(root, from_=1997, to=2025, state='readonly')
+
+year = StringVar()
+spinbox = Spinbox(root, from_=1997, to=2025, textvariable=year,  state='readonly')
 
 button = ttk.Button(root, text="Login", command=getValue)
 
