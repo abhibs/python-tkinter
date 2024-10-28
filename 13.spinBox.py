@@ -49,7 +49,7 @@ for i in range(1, 13):
 
 combobox = ttk.Combobox(root, textvariable=months, values=(numbers), state='readonly')
 
-spinbox = Spinbox(root, from_=1997, to=2025)
+spinbox = Spinbox(root, from_=1997, to=2025, state='readonly')
 
 button = ttk.Button(root, text="Login", command=getValue)
 
