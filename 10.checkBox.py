@@ -17,7 +17,10 @@ entry1.insert(0, 'Enter Your Name')
 entry2.insert(0, 'Enter Your Password')
 
 
-cbox = Checkbutton(root, text='Remember Me', font="Arial 15")
+
+chvar = IntVar()
+chvar.set(0)
+cbox = Checkbutton(root, text='Remember Me', variable=chvar, font="Arial 15")
 
 
 
