@@ -4,7 +4,7 @@ root = Tk()
 
 root.geometry("550x550")
 
-texteditor = Text(root)
+texteditor = Text(root, width=30, height=10)
 texteditor.grid(row=0, column=0)
 
 root.mainloop()
