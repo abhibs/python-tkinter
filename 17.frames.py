@@ -4,7 +4,7 @@ root.title("Abhiram B S")
 root.geometry("650x650+450+200")
 
 frames = Frame(root, height=300, width=300, bg='blue')
-frames.pack()
+frames.pack(fill=X)
 
 
 button1 = Button(frames, text='Button 1')
