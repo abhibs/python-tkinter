@@ -7,4 +7,7 @@ root.geometry("550x550")
 texteditor = Text(root, width=30, height=10)
 texteditor.grid(row=0, column=0, padx=40, pady=20)
 
+button = Button(root, text="Save")
+button.grid(row=3, column=0)
+
 root.mainloop()
