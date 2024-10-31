@@ -4,7 +4,7 @@ root = Tk()
 
 root.geometry("550x550")
 
-texteditor = Text(root, width=30, height=10)
+texteditor = Text(root, width=30, height=10, font=(("Times"), 15))
 texteditor.grid(row=0, column=0, padx=40, pady=20)
 texteditor.insert(INSERT, "Abhiram B S Javalli")
 texteditor.config(state='disabled')
