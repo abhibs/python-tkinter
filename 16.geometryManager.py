@@ -14,7 +14,7 @@ pass_entry = Entry(root, width=30)
 
 
 button = Button(root, text="Save")
-
+button2 = Button(root, text="Click Me", bg='red')
 
 title.place(x=150, y=20)
 
@@ -26,5 +26,6 @@ pass_entry.place(x=120, y=110)
 
 
 button.place(x=270, y=140)
+button2.place(relx=0.5, rely=0.5, anchor='center')
 
 root.mainloop()
