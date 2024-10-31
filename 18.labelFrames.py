@@ -6,7 +6,7 @@ root.title("Abhiram B S")
 root.geometry("650x650+450+200")
 
 
-searchbar = LabelFrame(root, text="Search Box")
+searchbar = LabelFrame(root, text="Search Box",bg='green')
 searchLbl = Label(searchbar, text="Search")
 searchbar.pack(side=TOP, pady=30)
 
