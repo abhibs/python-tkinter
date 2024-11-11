@@ -15,7 +15,8 @@ frame3 = ttk.Frame(pw, width=75, height=500, relief=SUNKEN)
 pw.add(frame1)
 pw.add(frame2)
 
-pw.insert(0, frame3)
+# pw.insert(0, frame3)
+pw.insert(1, frame3)
 
 pw.pack(fill=BOTH)
 
