@@ -14,6 +14,6 @@ tab2 = ttk.Frame(tabs)
 tabs.add(tab1, text="First Tab")
 tabs.add(tab2, text="Second Tab")
 
-tabs.pack()
+tabs.pack(fill=BOTH)
 
 root.mainloop()
