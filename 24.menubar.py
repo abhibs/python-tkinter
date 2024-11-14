@@ -7,7 +7,7 @@ root.title("Abhiram B S")
 menuBar = Menu(root)
 root.config(menu=menuBar)
 
-file = Menu(menuBar)
+file = Menu(menuBar,tearoff=0)
 menuBar.add_cascade(label='File', menu=file)
 
 file.add_command(label="New")
