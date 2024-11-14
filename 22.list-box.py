@@ -17,7 +17,12 @@ listbox.insert(8, "Surabhi")
 listbox.insert(9, "Manu")
 listbox.insert(10, "Anuradha")
 
+btn1 = Button(root, text="Print")
+btn2 = Button(root, text="Delete")
 
 listbox.pack()
+
+btn1.place(x=300, y=250)
+btn2.place(x=350, y=250)
 
 root.mainloop()
