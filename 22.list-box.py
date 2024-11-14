@@ -9,6 +9,11 @@ def getData():
     for item in items:
         print(listbox.get(item))
 
+def deleteData():
+    items = listbox.curselection()
+    for item in items:
+        listbox.delete(item)
+
 listbox = Listbox(root, width=40, height=15, selectmode=MULTIPLE)
 listbox.insert(0, "Abhiram")
 listbox.insert(1, "Anjan")
@@ -23,7 +28,7 @@ listbox.insert(9, "Manu")
 listbox.insert(10, "Anuradha")
 
 btn1 = Button(root, text="Print", command = getData)
-btn2 = Button(root, text="Delete")
+btn2 = Button(root, text="Delete", command = deleteData)
 
 listbox.pack()
 
