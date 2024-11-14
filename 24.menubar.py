@@ -16,6 +16,7 @@ file.add_command(label="Open")
 file.add_separator()
 file.add_command(label="Save")
 file.add_separator()
-file.add_command(label="Exit")
+icon = PhotoImage(file='icons/exit.png')
+file.add_command(label="Exit", image=icon, compound=LEFT)
 
 root.mainloop()
