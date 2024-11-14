@@ -4,6 +4,11 @@ root = Tk()
 
 root.geometry("650x650+650+200")
 
+def getData():
+    items = listbox.curselection()
+    for item in items:
+        print(listbox.get(item))
+
 listbox = Listbox(root, width=40, height=15, selectmode=MULTIPLE)
 listbox.insert(0, "Abhiram")
 listbox.insert(1, "Anjan")
@@ -17,7 +22,7 @@ listbox.insert(8, "Surabhi")
 listbox.insert(9, "Manu")
 listbox.insert(10, "Anuradha")
 
-btn1 = Button(root, text="Print")
+btn1 = Button(root, text="Print", command = getData)
 btn2 = Button(root, text="Delete")
 
 listbox.pack()
