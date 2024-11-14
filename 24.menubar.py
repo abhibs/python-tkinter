@@ -10,5 +10,9 @@ root.config(menu=menuBar)
 file = Menu(menuBar)
 menuBar.add_cascade(label='File', menu=file)
 
+file.add_command(label="New")
+file.add_command(label="Open")
+file.add_command(label="Save")
+file.add_command(label="Exit")
 
 root.mainloop()
