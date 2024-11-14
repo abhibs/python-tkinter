@@ -20,4 +20,7 @@ tabs.pack(fill=BOTH)
 
 lbl = ttk.Label(tab1, text='Abhiram B S')
 lbl.pack(padx=50, pady=50)
+
+btn = ttk.Button(tab2,text="Submit")
+btn.pack(padx=50, pady=50)
 root.mainloop()
