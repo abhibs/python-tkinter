@@ -4,7 +4,7 @@ root = Tk()
 
 root.geometry("650x650+650+200")
 
-listbox = Listbox(root)
+listbox = Listbox(root, width=40, height=15)
 listbox.insert(0, "Abhiram")
 listbox.insert(1, "Anjan")
 listbox.insert(2, "Aravind")
