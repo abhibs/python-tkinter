@@ -18,4 +18,6 @@ tabs.add(tab2, text="Second Tab", image=icon, compound=LEFT)
 
 tabs.pack(fill=BOTH)
 
+lbl = ttk.Label(tab1, text='Abhiram B S')
+lbl.pack(padx=50, pady=50)
 root.mainloop()
