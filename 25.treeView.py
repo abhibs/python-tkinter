@@ -16,4 +16,7 @@ treeview.insert('', '2', 'item3', text='Third Item')
 treeview.insert('', '3', 'item4', text='Forth Item')
 treeview.insert('', '4', 'item5', text='Fifth Item')
 
+treeview.move('item4', 'item1', 'end')
+treeview.move('item5', 'item1', 'end')
+
 root.mainloop()
