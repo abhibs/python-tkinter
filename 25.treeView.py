@@ -7,6 +7,10 @@ root.title("Abhiram B S")
 
 root.geometry("650x650+650+250")
 
+def getValue(event):
+    item = treeview.identify('item', event.x, event.y)
+    print("You are clicked on {}".format(treeview.item(item, "text")))
+
 treeview = ttk.Treeview(root)
 treeview.pack()
 
@@ -18,5 +22,7 @@ treeview.insert('', '4', 'item5', text='Fifth Item')
 
 treeview.move('item4', 'item1', 'end')
 treeview.move('item5', 'item1', 'end')
+
+treeview.bind('<Double-1>', getValue)
 
 root.mainloop()
